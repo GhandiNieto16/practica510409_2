@@ -1,8 +1,118 @@
-h1{
+#mp1{
+    border-top: 3px solid tomato;
+    border-bottom: 5px solid tomato;
+}
+
+/* Selectores de descendientes */
+
+#mp1 main{
+    background-color: rgb(197, 144, 246);
+}
+
+#mp1 aside{
+
+    background-color: bisque;
+}
+
+#mp1 > footer{
+
+    background-color: rgb(145, 158, 230);
+}
+
+/* Poner borde al pie de los articulos de la minipage1 */
+
+#mp1 article > footer{
+    border: 5px double gray;
+}
+
+
+/* Hermano generak */
+
+#mp1 h2 ~ article{
+    box-shadow: 5px 5px 5px palevioletred;
+}
+
+
+/* Hermano adyacente */
+/* No se deberia aplicar al articulo 2 */
+h2 + article, #mp1 nav, [href="#"]{
+    border-top: 5px double blue;
+}
+
+/* Selector universal  "*" El selector universal le pone a todas las etiquetas el mismo estilo*/
+
+/* *{
+    border: 1px dashed blue;
+}
+ */
+
+ /* Selector por tipo */
+
+/* h1{
     border: 10px dotted rosybrown;
     background-color: bisque;
     border-radius: 50px;
     text-align: center;
     box-shadow: 5px 5px gainsboro;
     font-size: 100;
+} */
+
+/* Selectores por id */
+
+/* #link1{
+    font-size: 20px;
 }
+
+#link6{
+    background-color: burlywood;
+} */
+
+/* Selectores por clase */
+
+/* .rojo{
+    background-color: red;
+    border: 5px groove tomato;
+    border-radius: 5px;
+}
+
+.verde{
+    background-color: rgb(84, 185, 104);
+    border: 5px groove rgb(169, 246, 188);
+    border-radius: 5px;
+
+}
+
+h1.verde{
+    font-size: 50px;
+} */
+
+/* Buscar por atributo, sin importar valor */
+/* [href]{
+    border-bottom: 5px solid blue;
+}
+
+[lang]{
+    color: rgb(229, 151, 231);
+} */
+
+/* [href="#"]{
+    background-color: lime;
+}
+
+[href*="you"]{
+    color: red
+}
+
+[href $="mx"]{
+    background-color: green;
+}
+
+[href ^= "https"]{
+    font-size: 25px;
+}
+
+[type="text"]{
+    color: blue;
+} */
+
+/* Selectores de lista */
